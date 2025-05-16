@@ -9,6 +9,7 @@ class AppTexts{
   static const String  signUp = " Sign UP";
   static const String  enterYourPassword = "Enter your password";
   static const String  createNewAccount = "Create New account";
+  static const String  createNewNote  = "Create New Note ";
   static const String  createdAccountSuccessfully = "Created Account Successfully";
   static const String  logIn = " Log In";
   static const String  addNote = "Add Note";
@@ -26,6 +27,7 @@ class AppTexts{
   static const String  headLine = "Head line";
   static const String  description = "Description";
   static const String  enterNotAddress = "Enter Note Address";
+  static const String  enterYourDescription = "Enter Your Description";
   static const String  selectMedia = "Select Media";
   static const String  create = "Create";
 }

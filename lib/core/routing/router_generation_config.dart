@@ -1,11 +1,12 @@
 import 'package:go_router/go_router.dart';
 import '../../features/auth/login/presentation/view/login_screen.dart';
 import '../../features/auth/register/presentation/view/register_screen.dart';
+import '../../features/create_note/presentation/view/create_note_screen.dart';
 import '../../features/home/presentation/view/home_screen.dart';
 import 'app_routes.dart';
 class RouterGenerationConfig{
   static GoRouter routerGenerationConfig = GoRouter(
-    initialLocation: AppRoutes.loginScreen,
+    initialLocation: AppRoutes.homeScreen,
       routes: [
         GoRoute(
             path: AppRoutes.homeScreen,
@@ -21,11 +22,11 @@ class RouterGenerationConfig{
             name: AppRoutes.registerScreen,
             builder: (context, state) => const RegisterScreen(),
         ),
-        // GoRoute(
-        //     path: AppRoutes.addNoteScreen,
-        //     name: AppRoutes.addNoteScreen,
-        //     builder: (context, state) => const AddNoteScreen(),
-        // ),
+        GoRoute(
+            path: AppRoutes.createNoteScreen,
+            name: AppRoutes.createNoteScreen,
+            builder: (context, state) => const CreateNoteScreen(),
+        ),
       ]
   );
 }
