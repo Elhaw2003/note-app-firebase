@@ -12,12 +12,12 @@ class NoteModel{
         createdAt: json["createdAt"]
     );
   }
-  factory NoteModel.toJson(NoteModel noteModel){
-    return NoteModel(
-        headline: noteModel.headline,
-        description: noteModel.description,
-        createdAt: noteModel.createdAt
-    );
+  Map<String,dynamic> toJson(){
+    return {
+        "headline": headline,
+        "description": description,
+        "createdAt": createdAt
+        };
   }
 
 }

@@ -8,6 +8,7 @@ import 'package:note_app_firebase/core/widgets/custom_text_field_widget.dart';
 import 'package:note_app_firebase/core/widgets/headline_text_widget.dart';
 import 'package:note_app_firebase/core/widgets/spacing_widget.dart';
 import 'package:note_app_firebase/features/auth/widgets/title_and_text_field_widget.dart';
+import 'package:note_app_firebase/features/create_note/presentation/view/widegts/create_button_widget.dart';
 
 class CreateNoteBody extends StatefulWidget {
   const CreateNoteBody({super.key});
@@ -49,14 +50,7 @@ class _CreateNoteBodyState extends State<CreateNoteBody> {
                   keyboardType: TextInputType.text),
             ),
             const HeightSpacing(height: 170),
-            CustomButtonWidget(
-                title: AppTexts.create,
-                buttonColor: AppColors.whiteColor,
-                borderColor: AppColors.whiteColor,
-                width: double.infinity,
-                height: 48,
-                textStyle: AppTextStyle.blackW600Size16Poppins
-            )
+            CreateButtonWidget(headlineController: headlineController,descriptionController: descriptionController,),
           ],
         ),
       ),

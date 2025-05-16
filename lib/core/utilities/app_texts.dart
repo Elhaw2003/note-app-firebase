@@ -10,11 +10,13 @@ class AppTexts{
   static const String  enterYourPassword = "Enter your password";
   static const String  createNewAccount = "Create New account";
   static const String  createNewNote  = "Create New Note ";
+  static const String  createNewNoteDone  = "Create New Note Done";
   static const String  createdAccountSuccessfully = "Created Account Successfully";
   static const String  logIn = " Log In";
   static const String  addNote = "Add Note";
   static const String  all = "All";
   static const String  alreadyHaveAnAccount = "Already have an account?";
+  static const String  fillAllFields = "Fill All Fields!!";
   static const String  logout = "Log out";
   static const String  cancel = "Cancel";
   static const String  yesLogout = "Yes, Logout";
