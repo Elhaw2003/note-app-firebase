@@ -29,4 +29,14 @@ class AppTextStyle {
     fontWeight: FontWeight.w600,
     fontSize: 16.sp
   );
+  static TextStyle whiteW500Size14Inter = GoogleFonts.inter(
+    color: AppColors.whiteColor,
+    fontWeight: FontWeight.w500,
+    fontSize: 14.sp
+  );
+  static TextStyle descAndDateW500Size14Inter = GoogleFonts.inter(
+    color: AppColors.whiteColor,
+    fontWeight: FontWeight.w400,
+    fontSize: 12.sp
+  );
 }

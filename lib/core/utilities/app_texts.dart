@@ -14,7 +14,7 @@ class AppTexts{
   static const String  addNote = "Add Note";
   static const String  all = "All";
   static const String  alreadyHaveAnAccount = "Already have an account?";
-  static const String  logout = "Logout";
+  static const String  logout = "Log out";
   static const String  cancel = "Cancel";
   static const String  yesLogout = "Yes, Logout";
   static const String  areYouSureYouWantToLogout = "Are you sure you want to logout?";

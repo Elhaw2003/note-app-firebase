@@ -8,4 +8,5 @@ class AppColors {
   static const Color pinkColor = Color(0xFFF2D6F1);
   static const Color redColor = Colors.red;
   static const Color greenColor = Colors.green;
+  static const Color descNoteColor = Color(0xffD9D9D9);
   }
