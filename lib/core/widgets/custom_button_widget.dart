@@ -45,14 +45,14 @@ class CustomButtonWidget extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            iconLeft != null ? Icon(iconLeft,color: AppColors.whiteColor,size: 20.sp,):const SizedBox.shrink(),
+            iconLeft != null ? Icon(iconLeft,color: AppColors.blackColor,size: 20.sp,):const SizedBox.shrink(),
             iconLeft != null ? const WidthSpacing(width: 10):const SizedBox.shrink(),
             Text(
               title,
               style: textStyle,
             ),
             iconRight != null ? const WidthSpacing(width: 10):const SizedBox.shrink(),
-            iconRight != null ? Icon(iconRight,color: AppColors.whiteColor,size: 20.sp,):const SizedBox.shrink(),
+            iconRight != null ? Icon(iconRight,color: AppColors.blackColor,size: 20.sp,):const SizedBox.shrink(),
           ],
         ),
     );

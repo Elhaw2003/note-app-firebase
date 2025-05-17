@@ -17,7 +17,7 @@ class CreateNoteScreen extends StatelessWidget {
         backgroundColor: AppColors.blackColor,
         appBar: AppBar(
           automaticallyImplyLeading: false,
-          flexibleSpace: const CreateNoteAppbar(),
+          flexibleSpace: CreateNoteAppbar(onPressed: (){Navigator.pop(context,true);},),
         ),
         body: const CreateNoteBody(),
       ),

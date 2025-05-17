@@ -1,14 +1,17 @@
 import 'package:animated_snack_bar/animated_snack_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:lottie/lottie.dart';
 import 'package:note_app_firebase/core/widgets/custom_animated_snack_bar_widget.dart';
 import 'package:note_app_firebase/features/create_note/presentation/controller/create_note_cubit/create_note_cubit.dart';
+import 'package:note_app_firebase/features/create_note/presentation/view/widegts/dialog_done_animation.dart';
 import 'package:note_app_firebase/features/home/data/models/note_model.dart';
 import '../../../../../core/utilities/app_colors.dart';
 import '../../../../../core/utilities/app_text_style.dart';
 import '../../../../../core/utilities/app_texts.dart';
 import '../../../../../core/widgets/custom_button_widget.dart';
 import '../../../../../core/widgets/loading_widget.dart';
+import '../../../../../generated/assets.dart';
 
 class CreateButtonWidget extends StatelessWidget {
   const CreateButtonWidget(
@@ -22,11 +25,20 @@ class CreateButtonWidget extends StatelessWidget {
     return BlocConsumer<CreateNoteCubit, CreateNoteState>(
       listener: (context, state) {
         if (state is CreateNoteSuccessState) {
-          CustomAnimatedSnackBarWidget.customAnimatedSnackBar(
+          showDialog(
               context: context,
-              title: AppTexts.createNewNoteDone,
-              type: AnimatedSnackBarType.success,
-              iconData: Icons.done);
+              //عشان ال user ميقفلش ال dialog بايده
+              barrierDismissible: false,
+              builder: (context) {
+                return const DialogDoneAnimation();
+              },
+          );
+          Future.delayed(
+            const Duration(seconds: 3),
+              (){
+              Navigator.pop(context);
+              }
+          );
         } else if (state is CreateNoteFailureState) {
           CustomAnimatedSnackBarWidget.customAnimatedSnackBar(
               context: context,
@@ -47,7 +59,7 @@ class CreateButtonWidget extends StatelessWidget {
                      noteModel: NoteModel(
                        headline: headlineController.text.trim(),
                        description: descriptionController.text.trim(),
-                       createdAt: "${DateTime.now().hour}:${DateTime.now().minute} ${DateTime.now().hour > 12 ? "PM" : "AM"}",
+                       createdAt: DateTime.now(),
                      ),
                    );
                  }

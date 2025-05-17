@@ -32,4 +32,6 @@ class AppTexts{
   static const String  enterYourDescription = "Enter Your Description";
   static const String  selectMedia = "Select Media";
   static const String  create = "Create";
+  static const String  reload = "Reload";
+  static const String  noNotesCreatedYet = "No Notes Created Yet..";
 }

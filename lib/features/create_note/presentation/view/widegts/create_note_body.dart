@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:note_app_firebase/core/utilities/app_colors.dart';
-import 'package:note_app_firebase/core/utilities/app_text_style.dart';
 import 'package:note_app_firebase/core/utilities/app_texts.dart';
-import 'package:note_app_firebase/core/widgets/custom_button_widget.dart';
 import 'package:note_app_firebase/core/widgets/custom_text_field_widget.dart';
 import 'package:note_app_firebase/core/widgets/headline_text_widget.dart';
 import 'package:note_app_firebase/core/widgets/spacing_widget.dart';
